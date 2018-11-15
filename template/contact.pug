@@ -1,19 +1,19 @@
 extends layout
 
 block vars
-    - let title = '联系我们'
+    - let title = '火星人科技'
 
 block content
     .container
         include lib/head
         #content
             input#point(style='display:none', value='113.299515,23.064282')
-            .content-inner(style='background-image: url(/public/images/contact1.jpg)')
+            .content-inner(style='background-image: url(/public/images/contact/contact1.jpg)')
                 // 关于我们开始
                 .block.block-contact
                     #contact-map.contact-map(style='height:300px;')
                     div
-                        img(style='width:100%', src='/public/images/iwmg-0345-version-2.png')
+                        img(style='width:100%', src='/public/images/contact/iwmg-0345-version-2.png')
                     .contact-content
                         h5.contact-title 联系我们
                         .editor-format
@@ -27,7 +27,7 @@ block content
                                 | 邮箱：273622400@qq.com
                                 br
                                 | 邮编：51000
-                            img(src='/public/images/43t.jpg')
+                            img(src='/public/images/contact/43t.jpg')
                         h5.contact-title 给我们留言
                         form#myform.clearfix(role='form', method='post')
                             .left
